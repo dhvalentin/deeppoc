@@ -14,6 +14,7 @@
 		96E1ED2724F7B83E0053506F /* DeepARPoc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96E1ED2524F7B83E0053506F /* DeepARPoc.xcdatamodeld */; };
 		96E1ED2924F7B8400053506F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E1ED2824F7B8400053506F /* Assets.xcassets */; };
 		96E1ED2C24F7B8400053506F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E1ED2A24F7B8400053506F /* LaunchScreen.storyboard */; };
+		96E1ED3B24F7BE440053506F /* DeepAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1ED3A24F7BE440053506F /* DeepAR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		96E1ED2824F7B8400053506F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E1ED2B24F7B8400053506F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E1ED2D24F7B8400053506F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E1ED3A24F7BE440053506F /* DeepAR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeepAR.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E1ED3B24F7BE440053506F /* DeepAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 		96E1ED1B24F7B83E0053506F /* DeepARPoc */ = {
 			isa = PBXGroup;
 			children = (
+				96E1ED3924F7BE350053506F /* Frameworks */,
 				96E1ED1C24F7B83E0053506F /* AppDelegate.swift */,
 				96E1ED1E24F7B83E0053506F /* SceneDelegate.swift */,
 				96E1ED2024F7B83E0053506F /* ViewController.swift */,
@@ -68,6 +72,14 @@
 				96E1ED2524F7B83E0053506F /* DeepARPoc.xcdatamodeld */,
 			);
 			path = DeepARPoc;
+			sourceTree = "<group>";
+		};
+		96E1ED3924F7BE350053506F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96E1ED3A24F7BE440053506F /* DeepAR.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +302,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRRN4Z2WL9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DeepARPoc/Frameworks",
+				);
 				INFOPLIST_FILE = DeepARPoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,6 +324,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRRN4Z2WL9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DeepARPoc/Frameworks",
+				);
 				INFOPLIST_FILE = DeepARPoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
